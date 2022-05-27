@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: -2039734450214536681}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,6 +206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b50a7dba7681b4285693c24f700a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnBallCollision:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7078391350347553033
 GameObject:
   m_ObjectHideFlags: 0
