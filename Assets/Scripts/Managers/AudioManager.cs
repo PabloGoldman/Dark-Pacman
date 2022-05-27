@@ -24,6 +24,11 @@ public class AudioManager : MonoBehaviourSingleton<AudioManager>
         
     }
 
+    public void PlayBallSound()
+    {
+        gameSounds[0].Play();
+    }
+
     public void SetMusicVolume(float volume)
     {
         audioMixer.SetFloat("Volume", Mathf.Log10(volume) * 20);

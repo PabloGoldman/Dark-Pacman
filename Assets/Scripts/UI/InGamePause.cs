@@ -5,6 +5,7 @@ using UnityEngine;
 public class InGamePause : MonoBehaviour
 {
     [SerializeField] GameObject inGamePause;
+    [SerializeField] GameObject optionsMenu;
 
     bool inPause = false;
 
@@ -35,6 +36,7 @@ public class InGamePause : MonoBehaviour
     {
         Time.timeScale = 1;
         inGamePause.SetActive(false);
+        optionsMenu.SetActive(false);
         inPause = false;
     }
 
