@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BallCollision : MonoBehaviour
 {
+    public UnityEvent OnBallCollision;
+
+    int score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +26,8 @@ public class BallCollision : MonoBehaviour
         if (other.gameObject.tag == "Ball")
         {
             other.gameObject.SetActive(false);
+            score++;
+            OnBallCollision?.Invoke();
         }
     }
 }

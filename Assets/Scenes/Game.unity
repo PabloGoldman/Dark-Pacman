@@ -593,6 +593,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1301003683}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddScore
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScoreBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039734450214536681, guid: 9cde081714d440741b8478900bc95396, type: 3}
+      propertyPath: OnBallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5323991593255778005, guid: 9cde081714d440741b8478900bc95396, type: 3}
       propertyPath: speed
       value: 2
@@ -4802,6 +4830,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255625692}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1301003682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7301136509953330617, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+  m_PrefabInstance: {fileID: 449456024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301003683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301003682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04996f9715b7db45a58c3de640fa877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1301330982
 PrefabInstance:
   m_ObjectHideFlags: 0
