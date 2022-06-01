@@ -306,6 +306,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4851674034621417432, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -92.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011678144343028233, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17.999962
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401538460216679079, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401538461386170761, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 918.64
+      objectReference: {fileID: 0}
     - target: {fileID: 6401538461386170763, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
       propertyPath: m_Name
       value: MenuCanvas
@@ -393,6 +409,10 @@ PrefabInstance:
     - target: {fileID: 6401538461386170767, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401538462056705113, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 124
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8acae652080ceb49906876e5fbe085c, type: 3}
