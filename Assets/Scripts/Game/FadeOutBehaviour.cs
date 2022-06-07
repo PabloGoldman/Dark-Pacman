@@ -10,7 +10,7 @@ public class FadeOutBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mr = GetComponent<MeshRenderer>();
+        mr = GetComponentInChildren<MeshRenderer>();
 
         StartCoroutine(FadeOutCoroutine());
     }

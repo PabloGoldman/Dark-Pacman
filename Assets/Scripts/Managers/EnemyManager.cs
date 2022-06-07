@@ -30,7 +30,7 @@ public class EnemyManager : MonoBehaviour
         {
             GameObject prefab = enemyPrefab;
             Instantiate(prefab, enemySpawners[Random.Range(0, enemyMaterials.Length)].transform.position, Quaternion.identity);
-            prefab.GetComponent<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
+            prefab.GetComponentInChildren<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
         }
     }
 
