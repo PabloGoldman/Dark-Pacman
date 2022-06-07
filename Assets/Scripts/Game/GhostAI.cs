@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GhostScript : MonoBehaviour
+public class GhostAI : MonoBehaviour
 {
     public GameObject target;
     NavMeshAgent agent;
