@@ -7001,10 +7001,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1246358785}
-    - target: {fileID: 8518481783436852488, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1f9c3022dd73bc14f9a320c1b238e025, type: 2}
     - target: {fileID: 8518481783436852490, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9514,7 +9510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbadf6bb88da254b8e7d26eeed71a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilFadedOut: 0
 --- !u!1 &796923621
 GameObject:
   m_ObjectHideFlags: 0
@@ -9644,10 +9639,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1246358785}
-    - target: {fileID: 8518481783436852488, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1faa56361a3f3348b30906e91e78970, type: 2}
     - target: {fileID: 8518481783436852490, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12173,10 +12164,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1246358785}
-    - target: {fileID: 8518481783436852488, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 84098e04ba6d5254cbc2c69d8ac4ce16, type: 2}
     - target: {fileID: 8518481783436852490, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -20847,11 +20834,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8518481783436852494, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
-  enemyMaterials:
-  - {fileID: 2100000, guid: 78cb0bee3b9730944a0bf854764ef9be, type: 2}
-  - {fileID: 2100000, guid: c1faa56361a3f3348b30906e91e78970, type: 2}
-  - {fileID: 2100000, guid: 1f9c3022dd73bc14f9a320c1b238e025, type: 2}
-  - {fileID: 2100000, guid: 84098e04ba6d5254cbc2c69d8ac4ce16, type: 2}
+  enemySprites:
+  - {fileID: 21300000, guid: 2d87b498619892b4aaffc3261602db5e, type: 3}
+  - {fileID: 21300000, guid: 7adecf6338f56c44da83bf80a14b3f8d, type: 3}
+  - {fileID: 21300000, guid: 1ca353ded8b727049b7bc87cb589df16, type: 3}
+  - {fileID: 21300000, guid: 41ff66416ca03a14689ed9780d0b36ec, type: 3}
   enemySpawners:
   - {fileID: 674231298}
   - {fileID: 845695180}
@@ -26277,10 +26264,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1246358785}
-    - target: {fileID: 8518481783436852488, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 78cb0bee3b9730944a0bf854764ef9be, type: 2}
     - target: {fileID: 8518481783436852490, guid: f3ebbae5dcd59264e9bb14d496cba5db, type: 3}
       propertyPath: m_RootOrder
       value: 0

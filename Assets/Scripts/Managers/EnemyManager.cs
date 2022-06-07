@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] Material[] enemyMaterials;
+    [SerializeField] Sprite[] enemySprites;
 
     [SerializeField] GameObject[] enemySpawners;
 
@@ -29,8 +29,8 @@ public class EnemyManager : MonoBehaviour
         for (int i = 0; i < enemiesPerSpawn; i++)
         {
             GameObject prefab = enemyPrefab;
-            Instantiate(prefab, enemySpawners[Random.Range(0, enemyMaterials.Length)].transform.position, Quaternion.identity);
-            prefab.GetComponent<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
+            Instantiate(prefab, enemySpawners[Random.Range(0, enemySpawners.Length)].transform.position, Quaternion.identity);
+            prefab.GetComponent<SpriteRenderer>().sprite = enemySprites[Random.Range(0, enemySprites.Length)];
         }
     }
 

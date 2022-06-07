@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class GhostAI : MonoBehaviour
 {
-    public GameObject target;
+    public GameObject target; //Preguntarle a sergio por que los sprites se cortan a la mitad
     NavMeshAgent agent;
 
     // Start is called before the first frame update
