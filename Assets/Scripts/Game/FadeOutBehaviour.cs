@@ -28,7 +28,7 @@ public class FadeOutBehaviour : MonoBehaviour
         while (mr.material.color.a > 0)
         {
             mr.material.color = new Color(mr.material.color.r, mr.material.color.g, mr.material.color.b, mr.material.color.a - Time.deltaTime);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.15f);
         }
     }
 }
