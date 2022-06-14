@@ -11,23 +11,23 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     [SerializeField] GameObject lossGamePanel;
     [SerializeField] GameObject winGamePanel;
 
-    public GameObject[] balls;
+    public int ballsToWin = 10;
 
     public int playerScore;
 
     void Start()
     {
-        balls = GameObject.FindGameObjectsWithTag("Ball");
+
     }
 
     void Update()
     {
-        if (playerScore >= balls.Length)
+        if (playerScore >= ballsToWin)
         {
             WinGame();
         }
 
-        if ((gameOver || winGame) && Input.anyKey)
+        if ((gameOver || winGame) && Input.anyKeyDown)
         {
             ResetGame();
         }
