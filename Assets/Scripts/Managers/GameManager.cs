@@ -27,12 +27,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
             WinGame();
         }
 
-        if (gameOver && Input.anyKey)
-        {
-            ResetGame();
-        }
-
-        if (winGame && Input.anyKey)
+        if ((gameOver || winGame) && Input.anyKey)
         {
             ResetGame();
         }
