@@ -5,16 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
-    [SerializeField] GameObject lossGamepanel;
-    public void LoseGame()
-    {
-        //Esta funcion esté en el canvas o en el game manager?
-        lossGamepanel.SetActive(true);
-    }
+    bool gameOver = false;
 
-    public void SetTimeScale(int scale)
+    [SerializeField] GameObject lossGamePanel;
+
+    void Update()
     {
-        Time.timeScale = scale;
+        //Este codigo tendria que ir aca?
+        if (gameOver && Input.anyKey)
+        {
+            ResetGame();
+        }
     }
 
     public void ResetGame()
@@ -24,6 +25,18 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void SetTimeScale(int scale)
+    {
+        Time.timeScale = scale;
+    }
+
+    public void LoseGame()
+    {
+        //Esta funcion esté en el canvas o en el game manager?
+        gameOver = true;
+        lossGamePanel.SetActive(true);
+        SetTimeScale(0);
+    }
 
     public void QuitGame()
     {

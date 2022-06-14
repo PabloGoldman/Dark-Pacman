@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviourSingleton<AudioManager>
 
     public void PlayBallSound()
     {
-        gameSounds[0].Play();
+        //gameSounds[0].Play();
     }
 
     public void SetMusicVolume(float volume)

@@ -27,8 +27,8 @@ public class InGamePause : MonoBehaviour
     
     public void Pause()
     {
-        //Hacer que el timeScale lo cambie el game manager?
-        GameManager.Get().SetTimeScale(0);
+        //ameManager.Get().SetTimeScale(0);
+        Time.timeScale = 0;
         inGamePause.SetActive(true);
         inPause = true;
     }
