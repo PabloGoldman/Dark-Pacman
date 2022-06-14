@@ -27,7 +27,6 @@ public class InGamePause : MonoBehaviour
     
     public void Pause()
     {
-        //ameManager.Get().SetTimeScale(0);
         Time.timeScale = 0;
         inGamePause.SetActive(true);
         inPause = true;
@@ -35,7 +34,7 @@ public class InGamePause : MonoBehaviour
 
     public void Resume()
     {
-        GameManager.Get().SetTimeScale(1);
+        Time.timeScale = 1;
         inGamePause.SetActive(false);
         optionsMenu.SetActive(false);
         inPause = false;

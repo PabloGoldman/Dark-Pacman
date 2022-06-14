@@ -6,21 +6,45 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
     bool gameOver = false;
+    bool winGame = false;
 
     [SerializeField] GameObject lossGamePanel;
+    [SerializeField] GameObject winGamePanel;
+
+    public GameObject[] balls;
+
+    public int playerScore;
+
+    void Start()
+    {
+        balls = GameObject.FindGameObjectsWithTag("Ball");
+    }
 
     void Update()
     {
-        //Este codigo tendria que ir aca?
+        if (playerScore >= balls.Length)
+        {
+            WinGame();
+        }
+
         if (gameOver && Input.anyKey)
+        {
+            ResetGame();
+        }
+
+        if (winGame && Input.anyKey)
         {
             ResetGame();
         }
     }
 
+    public void AddScore()
+    {
+        playerScore++;
+    }
+
     public void ResetGame()
     {
-        //Aca o en el scene manager?
         SetTimeScale(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -32,9 +56,15 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     public void LoseGame()
     {
-        //Esta funcion esté en el canvas o en el game manager?
         gameOver = true;
         lossGamePanel.SetActive(true);
+        SetTimeScale(0);
+    }
+
+    public void WinGame()
+    {
+        winGame = true;
+        winGamePanel.SetActive(true);
         SetTimeScale(0);
     }
 
