@@ -23722,6 +23722,66 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 514602021}
+    - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e40a57254dbc0a42b5af62759a9b0cb, type: 3}
+    - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9386792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9386792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234672, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 162.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234672, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 36.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234672, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709683234673, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710576929544, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_fontSize
+      value: 20.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710576929544, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_margin.w
+      value: 11.693404
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710576929544, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_margin.x
+      value: 7.946238
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710576929544, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_margin.y
+      value: 2.1118345
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710576929544, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_margin.z
+      value: 9.189652
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710966284423, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
 --- !u!4 &2256667777196067630 stripped
