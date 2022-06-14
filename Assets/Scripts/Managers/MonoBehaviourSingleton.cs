@@ -1,8 +1,5 @@
 using UnityEngine;
 
-//Que los creditos sean tomados de un text asset
-//Hacer que funcione con otro personaje
-
 public class MonoBehaviourSingleton<T> : MonoBehaviour where T : Component
 {
     private static T instance;
