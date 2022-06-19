@@ -15,11 +15,6 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     public int playerScore;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (playerScore >= ballsToWin)

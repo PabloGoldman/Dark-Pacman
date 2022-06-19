@@ -7,6 +7,7 @@ public class ScManager : MonoBehaviour
 {
     public void LoadScene(int num)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(num);
     }
 }
