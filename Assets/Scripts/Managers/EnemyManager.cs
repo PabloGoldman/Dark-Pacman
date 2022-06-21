@@ -29,7 +29,7 @@ public class EnemyManager : MonoBehaviour
         for (int i = 0; i < enemiesPerSpawn; i++)
         {
             GameObject prefab = enemyPrefab;
-            Instantiate(prefab, enemySpawners[Random.Range(0, enemyMaterials.Length)].transform.position, Quaternion.identity);
+            Instantiate(prefab, enemySpawners[Random.Range(0, enemySpawners.Length)].transform.position, Quaternion.identity);
             prefab.GetComponentInChildren<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
         }
     }
