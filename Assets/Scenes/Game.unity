@@ -512,6 +512,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1845415732}
     - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: de3ef8ef68213c649a41c61709f23a55, type: 2}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
       propertyPath: lossGamePanel
       value: 
       objectReference: {fileID: 841057796}
@@ -25599,7 +25603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071417710181923515, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_text
-      value: 0/500
+      value: 0/250
       objectReference: {fileID: 0}
     - target: {fileID: 2071417710181923515, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_margin.z

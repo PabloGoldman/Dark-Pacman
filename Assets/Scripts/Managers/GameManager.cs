@@ -11,13 +11,13 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     [SerializeField] GameObject lossGamePanel;
     [SerializeField] GameObject winGamePanel;
 
-    public int ballsToWin = 10;
+    public LevelSettings levelSettings;
 
     public int playerScore;
 
     void Update()
     {
-        if (playerScore >= ballsToWin)
+        if (playerScore >= levelSettings.ballsToWin)
         {
             WinGame();
         }
