@@ -713,6 +713,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24100000, guid: 3c2d69ae7a2f8e444be444bbe3091d29, type: 2}
     - target: {fileID: 5508234264487955530, guid: 7ff228ea491eed34aa9013ea16538363, type: 3}
+      propertyPath: dontDestroyOnLoad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508234264487955530, guid: 7ff228ea491eed34aa9013ea16538363, type: 3}
       propertyPath: gameAudios.Array.size
       value: 1
       objectReference: {fileID: 0}
