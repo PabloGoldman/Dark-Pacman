@@ -508,6 +508,10 @@ PrefabInstance:
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1651320528}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
       propertyPath: winGamePanel
       value: 
       objectReference: {fileID: 1845415732}
@@ -522,6 +526,34 @@ PrefabInstance:
     - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
       propertyPath: dontDestroyOnLoad
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1651320528}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddMaxEnemiesPerSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemyManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870459148442353480, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
+      propertyPath: onReachCheckpointPoints.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2983905908789728984, guid: 557f51b23a0d2e44f9378266b81da93a, type: 3}
       propertyPath: m_RootOrder
@@ -18983,7 +19015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a232e83a5b7354597fab25f7c16b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 624222644}
 --- !u!1001 &1580421442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20118,6 +20149,7 @@ MonoBehaviour:
   - {fileID: 290003357}
   - {fileID: 830395739}
   timeBetweenSpawning: 10
+  addedEnemiesPerPoints: 1
   enemiesPerSpawn: 4
 --- !u!1001 &1675562833
 PrefabInstance:
@@ -25518,7 +25550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709683234672, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.095764
+      value: -30.095734
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709683234673, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_Colors.m_NormalColor.a

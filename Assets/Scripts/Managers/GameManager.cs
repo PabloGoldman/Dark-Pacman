@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
@@ -13,7 +14,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     public LevelSettings levelSettings;
 
+    [SerializeField] EnemyManager enemyManager;
+
     public int playerScore;
+
+    public UnityEvent onReachCheckpointPoints;
 
     void Update()
     {
@@ -27,10 +32,15 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
             ResetGame();
         }
     }
-
+    
     public void AddScore()
     {
         playerScore++;
+
+        if (playerScore % 50 == 0)
+        {
+            onReachCheckpointPoints?.Invoke();
+        }
     }
 
     public void ResetGame()

@@ -10,7 +10,22 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] GameObject[] enemySpawners;
 
     [SerializeField] float timeBetweenSpawning;
+
+    [SerializeField] int addedEnemiesPerPoints; //Enemigos que se añaden al maximo cada 50 puntos
+
+    public int AddedEnemiesPerPoints
+    {
+        get { return addedEnemiesPerPoints; }
+        set { addedEnemiesPerPoints = value; }
+    }
+
     [SerializeField] int enemiesPerSpawn;
+
+    public int EnemiesPerSpawn
+    {
+        get { return enemiesPerSpawn; }
+        set { enemiesPerSpawn = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +33,9 @@ public class EnemyManager : MonoBehaviour
         StartCoroutine(SpawnEnemyCoroutine());
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddMaxEnemiesPerSpawn()
     {
-
+        enemiesPerSpawn += addedEnemiesPerPoints;
     }
 
     void SpawnEnemy()
