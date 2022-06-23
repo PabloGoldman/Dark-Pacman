@@ -47,8 +47,8 @@ public class MapCreator : MonoBehaviour
                 switch (mapLines[i][j])
                 {
                     case 'X':
-                        Vector3 v = new Vector3(j * 2, 0 ,i * 2);
-                        Instantiate(pillar, v, Quaternion.identity);
+                        Vector3 aux = new Vector3(j * pillar.GetComponent<MeshRenderer>().bounds.size.x, 0 ,i * pillar.GetComponent<MeshRenderer>().bounds.size.x);
+                        Instantiate(pillar, aux, Quaternion.identity);
                         break;
                     default:
                         break;
