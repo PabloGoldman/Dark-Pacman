@@ -22,11 +22,13 @@ public class MapCreator : MonoBehaviour
 
     public void ReadFileMap()
     {
-        FileStream fs = File.OpenRead("Assets/Map/map.txt"); //Hay que hacer lo del persistent data path
+        FileStream fs = File.OpenRead("C:/map.txt"); //Hay que hacer lo del persistent data path
 
         StreamReader sr = new StreamReader(fs);
 
         map = sr.ReadToEnd();
+
+        Debug.Log(map);
 
         mapLines = map.Split('\n');
 
@@ -36,9 +38,9 @@ public class MapCreator : MonoBehaviour
 
     public void CreateMap()
     {
-        for (int i = 0; i < mapLines.Length - 1; i++)
+        for (int i = 0; i < mapLines.Length; i++)
         {
-            for (int j = 0; j < mapLines[i].Length - 1; j++)
+            for (int j = 0; j < mapLines[i].Length; j++)
             {
                 switch (mapLines[i][j])
                 {
