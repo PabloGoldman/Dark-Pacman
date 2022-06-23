@@ -6,6 +6,9 @@ using System.IO;
 public class MapCreator : MonoBehaviour
 {
     [SerializeField] private GameObject pillar;
+    [SerializeField] TextAsset mapAsset;
+
+    string path;
 
     private int posX = 0;
     private int posZ = 0;
@@ -14,6 +17,14 @@ public class MapCreator : MonoBehaviour
 
     private string[] mapLines;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        path = Application.persistentDataPath + "/Map/map.txt";
+
+        File.WriteAllText(path, mapAsset.ToString());
+    }
+
     void Start()
     {
         ReadFileMap();
@@ -22,18 +33,9 @@ public class MapCreator : MonoBehaviour
 
     public void ReadFileMap()
     {
-        FileStream fs = File.OpenRead("C:/map.txt"); //Hay que hacer lo del persistent data path
-
-        StreamReader sr = new StreamReader(fs);
-
-        map = sr.ReadToEnd();
-
-        Debug.Log(map);
+        map = File.ReadAllText(path);
 
         mapLines = map.Split('\n');
-
-        sr.Close();
-        fs.Close();
     }
 
     public void CreateMap()
