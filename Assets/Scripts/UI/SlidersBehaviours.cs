@@ -6,26 +6,24 @@ using UnityEngine.UI;
 
 public class SlidersBehaviours : MonoBehaviour
 {
-    const string musicVol = "musicVolume";
-    const string sfxVol = "sxfVolume";
+    [SerializeField] ILoaderSaver loaderSaver;
 
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
-    public UnityEvent<float, float> onQuit; 
+    public UnityEvent<float, float> onQuit;
 
     void Start()
     {
-        if (PlayerPrefs.HasKey(musicVol))
-        {
-            musicSlider.value = PlayerPrefs.GetFloat(musicVol);
-            sfxSlider.value = PlayerPrefs.GetFloat(sfxVol);
-        }
-        else
-        {
-            musicSlider.value = 0.5f;
-            sfxSlider.value = 0.5f;
-        }
+        float music;
+        float sfx;
+
+        loaderSaver.GetVolume(out music, out sfx);
+
+        musicSlider.value = music;
+
+        sfxSlider.value = sfx;
+
     }
 
     private void OnApplicationQuit()
