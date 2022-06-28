@@ -19263,11 +19263,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 1f9c3022dd73bc14f9a320c1b238e025, type: 2}
   - {fileID: 2100000, guid: 84098e04ba6d5254cbc2c69d8ac4ce16, type: 2}
   enemySpawners:
-  - {fileID: 674231298}
-  - {fileID: 845695180}
-  - {fileID: 1152224368}
-  - {fileID: 290003357}
-  - {fileID: 830395739}
+  - {fileID: 674231299}
+  - {fileID: 845695181}
+  - {fileID: 1152224369}
+  - {fileID: 290003358}
+  - {fileID: 830395740}
   timeBetweenSpawning: 10
   addedEnemiesPerPoints: 1
   enemiesPerSpawn: 4
@@ -24463,7 +24463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709638048499, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -420.47894
+      value: -493.6975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417709642237994, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709643086060, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
@@ -24547,7 +24551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709643086063, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225.28735
+      value: -269.2185
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709683234670, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_Type
@@ -24611,7 +24615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709683234672, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.095764
+      value: -44.739502
       objectReference: {fileID: 0}
     - target: {fileID: 2071417709683234673, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
@@ -24724,6 +24728,10 @@ PrefabInstance:
     - target: {fileID: 2071417710181923516, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071417710292664602, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071417710311405696, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
       propertyPath: m_Colors.m_NormalColor.a

@@ -22,11 +22,6 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     void Update()
     {
-        if (playerScore >= levelSettings.ballsToWin)
-        {
-            WinGame();
-        }
-
         if ((gameOver || winGame) && Input.anyKeyDown)
         {
             ResetGame();
@@ -40,6 +35,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         if (playerScore % scoreCheckpoint == 0)
         {
             onReachCheckpointPoints?.Invoke();
+        }
+
+        if (playerScore >= levelSettings.ballsToWin)
+        {
+            WinGame();
         }
     }
 
