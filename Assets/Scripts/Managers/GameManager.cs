@@ -14,9 +14,9 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     public LevelSettings levelSettings;
 
-    [SerializeField] EnemyManager enemyManager;
+    const int scoreCheckpoint = 50;
 
-    public int playerScore;
+    int playerScore;
 
     public UnityEvent onReachCheckpointPoints;
 
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         playerScore++;
 
-        if (playerScore % 50 == 0)
+        if (playerScore % scoreCheckpoint == 0)
         {
             onReachCheckpointPoints?.Invoke();
         }

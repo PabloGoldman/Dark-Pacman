@@ -7,11 +7,13 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] Material[] enemyMaterials;
 
-    [SerializeField] GameObject[] enemySpawners;
+    [SerializeField] Transform[] enemySpawners;
 
     [SerializeField] float timeBetweenSpawning;
 
     [SerializeField] int addedEnemiesPerPoints; //Enemigos que se añaden al maximo cada 50 puntos
+
+    bool allowedSpawning = true;
 
     public int AddedEnemiesPerPoints
     {
@@ -42,15 +44,14 @@ public class EnemyManager : MonoBehaviour
     {
         for (int i = 0; i < enemiesPerSpawn; i++)
         {
-            GameObject prefab = enemyPrefab;
-            Instantiate(prefab, enemySpawners[Random.Range(0, enemySpawners.Length)].transform.position, Quaternion.identity);
-            prefab.GetComponentInChildren<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
+            GameObject go = Instantiate(enemyPrefab, enemySpawners[Random.Range(0, enemySpawners.Length)].transform.position, Quaternion.identity);
+            go.GetComponentInChildren<MeshRenderer>().material = enemyMaterials[Random.Range(0, enemyMaterials.Length)];
         }
     }
 
     IEnumerator SpawnEnemyCoroutine()
     {
-        while (true)
+        while (allowedSpawning)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(timeBetweenSpawning);
