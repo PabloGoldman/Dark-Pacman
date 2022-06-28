@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class AudioSaveLoad : MonoBehaviour, ILoaderSaver
+public class AudioSaveLoad : ILoaderSaver
 {
     const string musicKey = "musicVolume";
     const string sfxKey = "sxfVolume";
-
 
     public void GetVolume(out float musicVolume, out float sfxVolume)
     {
@@ -23,9 +19,9 @@ public class AudioSaveLoad : MonoBehaviour, ILoaderSaver
         }
     }
 
-    public void SetVolume(float music, float sfx)
+    public void SetVolume(float musicVolume, float sfxVolume)
     {
-        PlayerPrefs.SetFloat(musicKey, music);
-        PlayerPrefs.SetFloat(sfxKey, sfx);
+        PlayerPrefs.SetFloat(musicKey, musicVolume);
+        PlayerPrefs.SetFloat(sfxKey, sfxVolume);
     }
 }

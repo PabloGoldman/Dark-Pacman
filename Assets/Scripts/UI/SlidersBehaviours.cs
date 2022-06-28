@@ -1,33 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SlidersBehaviours : MonoBehaviour
 {
-    [SerializeField] ILoaderSaver loaderSaver;
+    ILoaderSaver loaderSaver;
 
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
-    public UnityEvent<float, float> onQuit;
+    private void Awake()
+    {
+        loaderSaver = new AudioSaveLoad();
+    }
 
     void Start()
     {
-        float music;
-        float sfx;
+        float musicVolume;
+        float sfxVolume;
 
-        loaderSaver.GetVolume(out music, out sfx);
+        loaderSaver.GetVolume(out musicVolume, out sfxVolume);
 
-        musicSlider.value = music;
-
-        sfxSlider.value = sfx;
-
+        musicSlider.value = musicVolume;
+        sfxSlider.value = sfxVolume;
     }
 
     private void OnApplicationQuit()
     {
-        onQuit.Invoke(musicSlider.value, sfxSlider.value);
+        loaderSaver.SetVolume(musicSlider.value, sfxSlider.value);
     }
 }
