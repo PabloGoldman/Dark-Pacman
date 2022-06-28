@@ -12334,7 +12334,6 @@ Transform:
   - {fileID: 1254975511}
   - {fileID: 514602020}
   - {fileID: 15524375}
-  - {fileID: 1658602462}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19271,49 +19270,6 @@ MonoBehaviour:
   timeBetweenSpawning: 10
   addedEnemiesPerPoints: 1
   enemiesPerSpawn: 4
---- !u!1 &1658602461
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658602462}
-  - component: {fileID: 1658602463}
-  m_Layer: 0
-  m_Name: SaveLoad
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1658602462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658602461}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.289005, y: 13.490122, z: 25.884151}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1012737931}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1658602463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658602461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a910ed3a8db4f6418b9a036d6098be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1675562833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24998,19 +24954,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2071417709291437088, guid: 5853af0a4203ffa4f9aa4b613a53569d, type: 3}
   m_PrefabInstance: {fileID: 2071417711062353694}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2071417711062353699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071417711062353698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a910ed3a8db4f6418b9a036d6098be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2071417711062353700
+--- !u!114 &2071417711062353704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25024,21 +24968,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 2071417711062353697}
   sfxSlider: {fileID: 2071417711062353696}
-  onQuit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1658602463}
-        m_TargetAssemblyTypeName: AudioSaveLoad, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &2256667777196067630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000885295529086191, guid: d9dfbbf5b5111d14a8870e66aab7d2e9, type: 3}
