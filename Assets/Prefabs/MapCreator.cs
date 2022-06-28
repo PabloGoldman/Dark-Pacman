@@ -7,9 +7,6 @@ public class MapCreator : MonoBehaviour
 {
     [SerializeField] private GameObject pillar;
 
-    private int posX = 0;
-    private int posZ = 0;
-
     private string map;
 
     private string[] mapLines;
